@@ -1,0 +1,812 @@
+
+<html>
+
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <style>
+    .tot{
+      width: 100%;
+    }
+    .btn-cmn {
+      height: 35px ! IMPORTANT;
+      width: 170px !important;
+      border-radius: 20px;
+      border: none;
+      margin: 8px;
+    }
+    .clr-btn5{
+      background-color:#04AA6D;
+    }
+    .clr-btn1{background-color: tomato;}
+    .clr-btn2{background-color:blueviolet;}
+    .clr-btn3{background-color:cornflowerblue;}
+    .clr-btn4{background-color: violet;}
+
+    .secA {
+      height: 400px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-top: 10px;
+    }
+
+    .secA1 {
+      text-align: center;
+    }
+
+    .secA2 {
+      height: 320px;
+      background: white;
+      width: 26%;
+      margin-left: 40px;
+      border-radius: 15px;
+      padding: 10px;
+      font-weight: 600;
+      display: flex;
+      flex-direction: column !important;
+      justify-content: space-between !important;
+    } .sm-box{
+      width: 90%;
+      height: 500px;
+      background-color: silver;
+    }
+
+    .clr-blue {
+      background-color: rgb(106, 106, 193);
+    }
+
+    .clr-pink {
+      background-color: pink;
+    }
+
+    .clr-green {
+      background-color: green;
+    }
+
+    .clr-yellow {
+      background-color: yellow;
+    }
+
+    .secB {
+      background-color: black;
+      width: 100%;
+
+    }
+    .row1,.row2,.row3{
+  
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 100%;
+
+    }.rowA{
+    text-align: center;
+    width: 50%;
+    background-color: rgb(243, 109, 109);
+    margin: 20px;}
+    .btn-row{
+      width: 170px !important;
+      height: 35px;
+      border-radius: 20px;
+      border: none;}
+      .clr-rowA{
+        background-color: cadetblue;
+      }.clr-rowB{
+        background-color: rgb(135, 243, 123);
+}
+.clr-rowC{
+  background-color: rgb(240, 132, 181);
+}
+.clr-rowD{
+  background-color: rgb(114, 204, 227);
+}
+.clr-rowE{
+  background-color: rgb(102, 159, 33);
+}
+.clr-rowF{
+  background-color: rgb(223, 69, 97);
+}
+.clr-A{
+  background-color: cornflowerblue;
+}
+.clr-B{
+  background-color: rgb(251, 157, 241);
+}
+.row-s-1{
+  width: 100%;
+ margin: 1px;
+ padding: 5px;
+
+  display: flex;
+ 
+}
+.row-s-A{
+  width: 50%!important;
+  text-align: center;
+  justify-content:space-around;
+  display: flex;
+  flex-direction: row!important;
+  height: 100px;
+border-radius: 5px;
+  margin: 10px;
+
+}.row-s-B{
+  width: 25%!important;
+ font-size: 11px;
+ justify-content: center;
+  padding: 16px 29px;
+  margin: 5px;
+ border-radius: 10px;
+  background-color: blueviolet;
+  
+}.clr-A{
+  background-color:burlywood ;
+}
+.clr-B{
+  background-color:yellowgreen ;
+}
+.clr-C{
+  background-color:violet ;
+}
+.clr-D{
+  background-color:tomato ;
+}
+.clr-E{
+  background-color:violet ;
+}
+.clr-F{
+  background-color:teal ;
+}
+.clr-G{
+  background-color:thistle ;
+}
+.clr-H{
+  background-color:steelblue ;
+}
+.clr-I{
+  background-color:silver ;
+}
+.clr-J{
+  background-color:whitesmoke ;
+}
+.clr-K{
+  background-color:burlywood ;
+}
+.clr-L{
+  background-color:seagreen ;
+}
+.clr-M{
+  background-color:tan ;
+}
+.clr-N{
+  background-color:blueviolet ;
+}
+.clr-O{
+  background-color:springgreen ;
+}
+  .clr-ls-A{
+    font-size: 13px!important;
+    background-color: violet;
+    padding: 4px;
+  }.clr-ls-B{
+    font-size: 13px!important;
+    background-color: rgb(213, 190, 106);
+    padding: 4px;
+  }
+  .clr-ls-C{
+    font-size: 13px!important;
+    background-color: rgb(174, 75, 25);
+    padding: 4px;}
+    .clr-ls-D{
+    font-size: 13px!important;
+    background-color: rgb(156, 173, 247);
+    padding:4px;}
+
+    @media(max-width: 600px) {
+      .tot{
+        width: 100%;
+      }
+      .secA2 {
+        display: none;
+      }
+      .rowA{
+        width: 100%;
+        padding: auto !important;
+        margin: 2px !important;
+      }
+      .row1, .row2, .row3{
+        flex-direction: column !important;
+      }
+      .row-s-1{
+        width: 100%!important;
+        flex-direction: column!important;
+        padding: auto !important;
+        margin: auto!important;
+       
+      }.row-s-A{
+       
+        margin: 2px!important;
+        flex-direction: column!important;
+        padding: 2px!important;
+      }
+      .row-s-B{
+      
+       width: 30%!important;
+        flex-direction: column!important;
+       
+       
+      }
+    }
+    @media(max-width: 1023px){
+      .tot{
+        width: 100%!important;
+      }
+      .secA{
+        width: 100%!important;
+        flex-direction: column!important;
+        height: auto!important;
+      }
+      .secA2 {
+        width: 70%!important;
+        margin-left: 0px!important;
+        margin-bottom: 20px;
+    }.row-s-1{
+        width: 100%!important;
+        flex-direction: column!important;
+      }
+      
+      .row-s-A{
+        width: 100% !important;
+        margin: 0px!important;
+      }
+      .row-s-B{
+        width:100% !important;
+      }
+    }
+    @media(min-width :1024px){
+      .tot{
+        width: 100%;
+      }
+      .secA {
+      height: 400px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-top: 10px;
+    }
+
+    .secA1 {
+      text-align: center;
+    }
+
+    .secA2 {
+      height: 320px;
+      background: white;
+      width: 35%;
+      margin-left: 40px;
+      border-radius: 15px;
+      padding: 10px;
+      font-weight: 600;
+      display: flex;
+      flex-direction: column !important;
+      justify-content: space-between !important;
+    }}
+  </style>
+</head>
+
+<body>
+  <div class="tot">
+    <div>
+      <!--first-->
+      <div class="secA clr-blue">
+
+        <div class="secA1">
+          <div>
+            <h1>HTML<h1>
+          </div>
+          <div>
+            <p>
+              The language for building web pages</p>
+          </div>
+          <div>
+            <button class="btn-cmn clr-btn1">Learn
+              HTML</button>
+          </div>
+          <div>
+            <button class="btn-cmn clr-btn2">Video
+              Tutorial</button>
+          </div>
+          <div>
+            <button class="btn-cmn clr-btn3">HTML
+              Reference</button>
+
+          </div>
+          <div>
+            <button class="btn-cmn clr-btn4">Get
+              Certified</button>
+          </div>
+        </div>
+        <div class="secA2">
+          
+          <p>HTML Example:</p>
+          <div class="sm-box">
+          </div>
+          <div><button class="btn-cmn clr-btn5">Try it yourself</button>
+          </div>
+        </div>
+      </div>
+      <!--second-->
+      <div class="secA clr-pink">
+        <div class="secA1">
+          <div>
+            <h1>CSS<h1>
+          </div>
+          <div>
+            <p>
+              The language for styling web pages</p>
+          </div>
+          <div>
+            <button class="btn-cmn clr-btn1">Learn
+              CSS</button>
+          </div>
+          <div>
+            <button class="btn-cmn clr-btn2">Video
+              Tutorial</button>
+          </div>
+          <div>
+            <button class="btn-cmn clr-btn3">CSS
+              Reference</button>
+
+          </div>
+          <div>
+            <button class="btn-cmn clr-btn4">Get
+              Certified</button>
+          </div>
+        </div>
+        <div class="secA2">
+          <p>CSS Example:</p>
+          <div class="sm-box">
+          </div>
+          <div><button class="btn-cmn clr-btn5">Try it yourself</button>
+          </div>
+        </div>
+      </div>
+      <!--third-->
+      <div class="secA clr-green">
+
+
+        <div class="secA1">
+          <div>
+            <h1>JavaScript<h1>
+          </div>
+          <div>
+            <p>
+              The language for programmig web pages</p>
+          </div>
+          <div>
+            <button class="btn-cmn clr-btn1">Learn
+              JavaScript</button>
+          </div>
+          <div>
+            <button class="btn-cmn clr-btn2">Video
+              Tutorial</button>
+          </div>
+          <div>
+            <button class="btn-cmn clr-btn3">JavaScript
+              Reference</button>
+
+          </div>
+          <div>
+            <button class="btn-cmn clr-btn4">Get
+              Certified</button>
+          </div>
+        </div>
+        <div class="secA2">
+          <p>JavaScript Example:</p>
+          <div class="sm-box">
+          </div>
+          <div><button class="btn-cmn clr-btn5">Try it yourself</button>
+          </div>
+        </div>
+      </div>
+      <!--fourth-->
+      <div class="secA clr-yellow">
+        <div class="secA1">
+          <div>
+            <h1>Python<h1>
+          </div>
+          <div>
+            <p>
+              A popular programmig language </p>
+          </div>
+          <div>
+            <button class="btn-cmn clr-btn1">Learn
+              Python</button>
+          </div>
+          <div>
+            <button class="btn-cmn clr-btn2">Video
+              Tutorial</button>
+          </div>
+          <div>
+            <button class="btn-cmn clr-btn3">Python
+              Reference</button>
+
+          </div>
+          <div>
+            <button class="btn-cmn clr-btn4">Get
+              Certified</button>
+          </div>
+        </div>
+        <div class="secA2">
+          <p>Python Example:</p>
+          <div class="sm-box">
+          </div>
+          <div><button class="btn-cmn clr-btn5">Try it yourself</button>
+          </div>
+        </div>
+
+
+      </div>
+      <!--fifth-->
+      <div class="secA clr-green">
+        <div class="secA1">
+          <div>
+            <h1>SQL<h1>
+          </div>
+          <div>
+            <p>
+              The language for building web pages</p>
+          </div>
+          <div>
+            <button class="btn-cmn clr-btn1">Learn
+              SQL</button>
+          </div>
+          <div>
+            <button class="btn-cmn clr-btn2">Video
+              Tutorial</button>
+          </div>
+          <div>
+            <button class="btn-cmn clr-btn3">SQL
+              Reference</button>
+
+          </div>
+          <div>
+            <button class="btn-cmn clr-btn4">Get
+              Certified</button>
+          </div>
+        </div>
+        <div class="secA2">
+          <p>SQL Example:</p>
+          <div class="sm-box">
+          </div>
+          <div><button class="btn-cmn clr-btn5">Try it yourself</button>
+          </div>
+        </div>
+
+
+      </div>
+
+    </div>
+    <!--five div ends-->
+    <div class="secB">
+
+      <div>
+        <!--first-->
+        <div class="row1">
+          <div class="rowA clr-rowA">
+            <div>
+              <h1>PHP</h1>
+            </div>
+  
+            <div>
+              <p>The web server programming language</p>
+            </div>
+            <div>
+              <button class="btn-row">Learn
+                PHP</button>
+            </div>
+          </div>
+          
+          <div class="rowA clr-rowB">
+            <div>
+              <h1>jQuery</h1>
+            </div>
+
+            <div>
+              <p>A JS library for developing web pages</p>
+            </div>
+            <div>
+              <button class="btn-row">Learn
+                jQuery</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="row2">
+          <div class="rowA clr-rowC">
+
+            <div>
+              <h1>Java</h1>
+            </div>
+
+            <div>
+              <p>A programming language</p>
+            </div>
+            <div>
+              <button class="btn-row">Learn
+                Java</button>
+            </div>
+          </div>
+          <div class="rowA clr-rowD">
+            <div>
+              <h1>C++</h1>
+            </div>
+
+            <div>
+              <p>A programming language</p>
+            </div>
+            <div>
+              <button class="btn-row">Learn
+                C++</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="row3">
+          <div class="rowA clr-rowE">
+            <div>
+              <h1>W3.CSS</h1>
+            </div>
+
+            <div>
+              <p>A CSS framework for faster and better responsive web pages</p>
+            </div>
+            <div>
+              <button class="btn-row">Learn
+                W3.CSS</button>
+            </div>
+          </div>
+
+
+
+          <div class="rowA clr-rowF">
+            <div>
+              <h1>Bootstrap</h1>
+            </div>
+
+            <div>
+              <p>A css framework for desinging better web pages</p>
+            </div>
+            <div>
+              <button class="btn-row">Learn
+                Bootstrap</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+      <!--first-->
+      <div class="row-s-1">
+            <div class="row-s-A clr-A">
+              <h1>C</h1>
+            </div>
+        <!--second-->
+            <div class="row-s-A clr-B">
+              <h1>C#</h1>
+            </div>
+      </div>
+      <!--third-->
+      <div class="row-s-1">
+        <div class="row-s-A">
+          <div class="row-s-B clr-C">
+            <h1>R</h1>
+          </div>
+        
+        <!--fourth-->
+          <div class="row-s-B clr-D">
+          <h1>Kotlin</h1>
+          </div>
+       </div>
+       <div class="row-s-A">
+          <div class="row-s-B clr-E">
+            <h1>Node.js</h1>
+          </div>
+          <div class="row-s-B clr-F">
+            <h1>React</h1>
+          </div>
+      </div>
+    </div>
+
+    <div class="row-s-1">
+      <div class="row-s-A">
+        <div class="row-s-B clr-G">
+          <h1>JSON</h1>
+        </div>
+      
+      <!--fourth-->
+        <div class="row-s-B clr-H">
+        <h1>Vue</h1>
+        </div>
+     </div>
+     <div class="row-s-A">
+        <div class="row-s-B clr-I">
+          <h1>MySQL</h1>
+        </div>
+        <div class="row-s-B">
+          <h1>XML</h1>
+        </div>
+    </div>
+  </div>
+
+  <div class="row-s-1">
+    <div class="row-s-A">
+      <div class="row-s-B clr-J">
+        <h1>Sass</h1>
+      </div>
+    
+    <!--fourth-->
+      <div class="row-s-B clr-K">
+      <h1>Icons</h1>
+      </div>
+   </div>
+   <div class="row-s-A">
+      <div class="row-s-B clr-L">
+        <h1>RWD</h1>
+      </div>
+      <div class="row-s-B clr-M">
+        <h1>Graphics</h1>
+      </div>
+  </div>
+</div>
+
+<div class="row-s-1">
+  <div class="row-s-A">
+    <div class="row-s-B clr-N">
+      <h1>SVG</h1>
+    </div>
+  
+  <!--fourth-->
+    <div class="row-s-B clr-O">
+    <h1>Canvas</h1>
+    </div>
+ </div>
+ <div class="row-s-A">
+    <div class="row-s-B clr-A">
+      <h1>Raspberry Pi</h1>
+    </div>
+    <div class="row-s-B clr-J">
+      <h1>Cyber Security</h1>
+    </div>
+</div>
+</div>
+
+<div class="row-s-1">
+  <div class="row-s-A">
+    <div class="row-s-B clr-D">
+      <h1>Colors</h1>
+    </div>
+  
+  <!--fourth-->
+    <div class="row-s-B clr-E">
+    <h1>Git</h1>
+    </div>
+ </div>
+ <div class="row-s-A">
+    <div class="row-s-B clr-C">
+      <h1>Matplotlib</h1>
+    </div>
+    <div class="row-s-B clr-H">
+      <h1>NumPy</h1>
+    </div>
+</div>
+</div>
+
+<div class="row-s-1">
+  <div class="row-s-A">
+    <div class="row-s-B clr-O">
+      <h1>Pandas</h1>
+    </div>
+  
+  <!--fourth-->
+    <div class="row-s-B clr-E">
+    <h1>SciPy</h1>
+    </div>
+ </div>
+ <div class="row-s-A">
+    <div class="row-s-B clr-K">
+      <h1>ASP</h1>
+    </div>
+    <div class="row-s-B">
+      <h1>AngularJS</h1>
+    </div>
+</div>
+</div>
+
+<div class="row-s-1">
+  <div class="row-s-A">
+    <div class="row-s-B clr-J">
+      <h1>AppML</h1>
+    </div>
+  
+  <!--fourth-->
+    <div class="row-s-B clr-D">
+    <h1>Go</h1>
+    </div>
+ </div>
+ <div class="row-s-A">
+    <div class="row-s-B clr-C">
+      <h1>TypeScript</h1>
+    </div>
+    <div class="row-s-B clr-A">
+      <h1>Django</h1>
+    </div>
+</div>
+</div>
+
+<div class="row-s-1">
+  <div class="row-s-A">
+    <div class="row-s-B clr-B">
+      <h1>MongoDB</h1>
+    </div>
+  
+  <!--fourth-->
+    <div class="row-s-B clr-N">
+    <h1>Statistics</h1>
+    </div>
+ </div>
+ <div class="row-s-A">
+    <div class="row-s-B clr-I">
+      <h1>Data Science</h1>
+    </div>
+    <div class="row-s-B clr-M">
+      <h1>Typing Speed</h1>
+    </div>
+</div>
+</div>
+
+<div class="row-s-1">
+  <div class="row-s-A">
+    <div class="row-s-B clr-O">
+      <h1>How To</h1>
+    </div>
+  
+  <!--fourth-->
+    <div class="row-s-B clr-D">
+    <h1>Code Game</h1>
+    </div>
+ </div>
+ <div class="row-s-A">
+    <div class="row-s-B clr-A">
+      <h1>Spaces</h1>
+    </div>
+    <div class="row-s-B clr-J">
+      <h1>PostgreSQL</h1>
+    </div>
+</div>
+</div>
+
+<div class="row-s-1">
+  <div class="row-s-A clr-ls-A">
+    <h1>Excel</h1>
+  </div>
+<!--second-->
+  <div class="row-s-A clr-ls-B">
+    <h1>DSA-Data Structures And Algorithms</h1>
+  </div>
+</div>
+<div class="row-s-1">
+  <div class="row-s-A clr-ls-C">
+    <h1>Machine Learning</h1>
+  </div>
+<!--second-->
+  <div class="row-s-A clr-ls-D">
+    <h1>Artificial Intelligence</h1>
+  </div>
+</div>
+  <!--small div end-->
+    
+</body>
+
+</html>
